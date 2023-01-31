@@ -4,96 +4,122 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>components library</title>
   </head>
   <body>
-    <h1>narendra's component library</h1>
-    <p>
-      Hello, I am Narendra Singh Jethi and is currently attending neogLevel0 camp.
-      This is a component library created by to better design each elements.
-      After creating this library, I am going to use the component in my portfolio,blog, all projects creation. This will ensure that all my projects have consistent themeing and styling.
+    <h1 id="lib-header">narendra's component library using html & css only</h1>
+    <p class="para">
+      Hello, I am Narendra Singh Jethi and is currently attending neogLevel0
+      camp. This is a component library created by to better design each
+      elements. After creating this library, I am going to use the component in
+      my portfolio,blog, all projects creation. This will ensure that all my
+      projects have consistent themeing and styling.
     </p>
     <hr />
     <h2>@typography</h2>
-    <h1>This is the biggest heading</h1>
-    <h2>This is the second biggest</h2>
-    <p>
-      The is some paragraph written under paragraph text.
-    </p>
+    <h1 id="headingOne">This is the biggest heading</h1>
+    <h2 id="headingTwo">This is the second biggest</h2>
+    <p>The is some paragraph written under paragraph text.</p>
     <small>
-        This is some which have usually smaller size than paragraph tag and is written under small tag.
+      This is some which have usually smaller size than paragraph tag and is
+      written under small tag.
     </small>
     <hr />
     <h2>@container</h2>
     <h3>fluid container</h3>
-    <div>This is fluid container and it will go till the end of the page</div>
+    <div class="container container-fluid">
+      This is fluid container and it will go till the end of the page
+    </div>
     <h3>center container</h3>
-    <div>This is center container and it will go to the specified width</div>
+    <div class="container container-center">
+      This is center container and it will go to the specified width
+    </div>
     <hr />
     <h2>@links</h2>
-    <a href="#">primart link</a>
-    <a href="#">secondary link</a>
+    <a class="link link-primary" href="#">primary link</a>
+    <a class="link link-secondary" href="#">secondary link</a>
     <hr />
     <h2>@lists</h2>
     <h3>Unorderd list</h3>
-    <ul>
+    <ul class="list-non-bullet">
       <li>Child</li>
       <li>Adult</li>
       <li>Men</li>
     </ul>
     <h3>Unorderd Inline list</h3>
-    <ul>
-      <li>Inline item one</li>
-      <li>Inline item two</li>
-      <li>Inline item three</li>
+    <ul class="list-non-bullet">
+      <li class="list-item-inline">Inline item one</li>
+      <li class="list-item-inline">Inline item two</li>
+      <li class="list-item-inline">Inline item three</li>
     </ul>
     <h3>reverse ordered list</h3>
-    <ol>
+    <ol reversed>
       <li>Old</li>
       <li>Young</li>
       <li>Child</li>
     </ol>
     <hr />
     <h2>@nav</h2>
-    <nav>
-      <div>narendraJethi</div>
-      <ul>
-        <li>
-          <a href="#">Home</a>
+    <nav class="navigation container">
+      <div class="nav-brand">narendraJethi</div>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+          <a class="link link-active" href="#">Home</a>
         </li>
-        <li>
-          <a href="#">Projects</a>
+        <li class="list-item-inline">
+          <a class="link" href="#">Projects</a>
         </li>
-        <li>
-          <a href="#">Blog</a>
+        <li class="list-item-inline">
+          <a class="link" href="#">Blog</a>
         </li>
       </ul>
     </nav>
     <hr />
     <h2>@header</h2>
-    <header>
-      <img src="images/image.svg" />
-      <h1>Heading inside header</h1>
+    <header class="hero">
+      <img class="hero-img" src="images/image.svg" />
+      <h1 class="hero-heading">
+        narendra Jethi the <span class="hero-skill">web developer</span>
+      </h1>
     </header>
     <hr />
     <h2>@section</h2>
-    <section>
-      <h3>white section</h3>
-      <p>This will have white background</p>
+    <section class="section">
+      <div class="container-center">
+        <h1>off white section</h1>
+        <p>
+          Web development involves the creation and maintenance of websites. To
+          become a successful web developer, one must have a strong foundation
+          in HTML, CSS, and JavaScript, as well as knowledge of at least one
+          back-end programming language such as PHP or Ruby on Rails. Whether
+          building websites from scratch or improving existing ones, web
+          developers play a crucial role in the digital world.
+        </p>
+      </div>
     </section>
-    <section>
-      <h3>Off white section</h3>
-      <p>This will have gray background</p>
+    <section class="section ow">
+      <div class="container-center">
+        <h1>off white section</h1>
+        <p>
+          Web development involves the creation and maintenance of websites. To
+          become a successful web developer, one must have a strong foundation
+          in HTML, CSS, and JavaScript, as well as knowledge of at least one
+          back-end programming language such as PHP or Ruby on Rails. Whether
+          building websites from scratch or improving existing ones, web
+          developers play a crucial role in the digital world.
+        </p>
+      </div>
     </section>
     <hr />
     <h2>@footer</h2>
-    <footer>
-      <div>Some small heading inside footer</div>
+    <footer class="footer">
+      <div class="footer-header">some small heading inside footer</div>
       <!--footer will not have any h1 or h2 heading therefor we are using div-->
-      <ul>
-        <li>socialOne</a></li>
-        <li>socialTwo</li>
-        <li>socialThree</li>
+      <ul class="social-links list-non-bullet">
+        <li class="list-item-inline"><a class="link" href="#">socialOne</a></li>
+        <li class="list-item-inline"><a class="link" href="#">socialOne</a></li>
+        <li class="list-item-inline"><a class="link" href="#">socialOne</a></li>
       </ul>
     </footer>
   </body>
