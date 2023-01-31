@@ -79,6 +79,7 @@ hr {
 }
 
 /*===========header============= */
+
 .hero {
   padding: 2rem;
 }
@@ -91,7 +92,7 @@ hr {
   text-align: center;
   color: var(--color-heading);
 }
-.hero-heading .hero-skill {
+.hero-skill {
   color: var(--color-primary);
 }
 /*==============section==============*/
